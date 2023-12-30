@@ -12,6 +12,10 @@
   --fs-400: 1rem;
   --fs-500: 1.875rem;
   --fs-600: 2.5rem;
+
+  --margin-short: ;
+  --margin-medium: ;
+  --margin-wide: ;
 }
 
 @media (min-width: 50em) {
