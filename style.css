@@ -1,9 +1,10 @@
 :root {
-  --clr-accent-400: ;
-  --clr-primary-400: ;
-  --clr-neutral-100: ;
+  --clr-accent-400: rgba(203, 166, 138, 255);
+  --clr-primary-400: rgba(72, 82, 83, 255);
+  --clr-neutral-200: rgba(233, 231, 221, 255);
+  --clr-neutral-100: rgba(252, 252, 251, 255);
 
-  --ff-primary: ;
+  --ff-primary: 'Poppins', sans-serif;
 
   --fw-regular: 400;
   --fw-semi-bold: 500;
@@ -117,7 +118,11 @@ svg {
 }
 
 .text-neutral-100 {
-  color: var(--clr-neutral-400);
+  color: var(--clr-neutral-100);
+}
+
+.text-neutral-200 {
+  color: var(--clr-neutral-200);
 }
 
 .bg-primary-400 {
@@ -161,7 +166,35 @@ svg {
   font-size: var(--fs-600);
 }
 
+.container {
+  --max-width: 1110px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
+}
+
+/* General styling */
+
+body {
+  font-size: var(--fs-body);
+  font-family: var(--ff-primary);
+  color: var(--clr-primary-400);
 }
