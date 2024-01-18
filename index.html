@@ -10,26 +10,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </head>
   <body>
     <header class="primary-header">
       <div class="container">
         <a href="#"><img src="img/r-logo.png" alt="Logo" /></a>
-        <nav class="primary-navigation">
+        <button class="mobile-nav-toggle" >
+          <ion-icon class="icon-open" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-close" name="close-outline"></ion-icon>
+          
+  
+        <nav class="primary-navigation" >
           <ul class="nav-list">
             <li><a href="#">About</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <button>
-        <a href="mailto:raidolehtla@gmail.com" class="button">Contact</a>
-      </button>
+        <button class="button"><a href="mailto:raidolehtla@gmail.com">Contact</a> 
+        </button>
       </div>
     </header>
-   
+ 
     <main>
-      <section>
+      <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
             <div>
@@ -52,7 +58,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="padding-block-900">
         <div class="container">
           <div class="single-column">
             <h2 class="fs-secondary-heading fw-bold">About Me</h2>
@@ -74,7 +80,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="padding-block-900">
         <div class="container">
           <div class="three-columns">
           <h2 class="fs-secondary-heading fw-bold">
@@ -94,14 +100,13 @@
             <p>Course app - created by Jonas Schmedtmann</p>
           </ul>
         </div>
-        <button>
-        <a href="mailto:raidolehtla@gmail.com" class="button">Contact</a>
+        <button href="mailto:raidolehtla@gmail.com" class="button">Contact 
       </button>
       </div>
       </section>
     </main>
 
-    <footer class="bg-primary-400 text-neutral-200">
+    <footer class="padding-block-700 | bg-primary-400 text-neutral-200">
       <div class="container">
         <div class="single-column">
           <div>
