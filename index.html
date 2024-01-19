@@ -18,19 +18,19 @@
       <div class="container">
         <div class="nav-wrapper">
         <a href="#"><img src="img/r-logo.png" alt="Logo" /></a>
-        <button class="mobile-nav-toggle" >
-          <ion-icon class="icon-open" name="menu-outline"></ion-icon>
-          <ion-icon class="icon-close" name="close-outline"></ion-icon>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <ion-icon class="icon-open" name="menu-outline" aria-hidden="true"></ion-icon>
+          <ion-icon class="icon-close" name="close-outline" aria-hidden="true"></ion-icon>
           </button>
   
-        <nav class="primary-navigation" >
-          <ul class="nav-list">
+        <nav  class="primary-navigation" id="primary-navigation">
+          <ul aria-label="Primary" class="nav-list">
             <li><a href="#">About</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <button class="button" style="display: none"><a href="mailto:raidolehtla@gmail.com">Contact</a> 
+        <button class="button | display-sm-none display-md" ><a href="mailto:raidolehtla@gmail.com">Contact</a> 
         </button>
       </div>
       </div>
@@ -106,7 +106,7 @@
 
           </ul>
         </div>
-        <button href="mailto:raidolehtla@gmail.com" class="button">Contact 
+        <button href="mailto:raidolehtla@gmail.com" class="button ">Contact 
       </button>
       </div>
       </section>
