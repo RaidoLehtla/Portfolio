@@ -123,6 +123,11 @@ body {
   color: var(--clr-primary-400);
 }
 
+p {
+  opacity: 0.8;
+  max-width: 50ch;
+}
+
 /* Button */
 
 .button {
